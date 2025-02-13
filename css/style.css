@@ -5,7 +5,7 @@
 
 /* Jumbotron */
 .jumbotron {
-  background: url(../img/jumbotron-bg.jpg);
+  background: url(../img/seo2.jpg);
   background-size: cover;
   height: 540px;
   position: relative;
@@ -17,8 +17,8 @@
   display: block;
   position: absolute;
   width: 100%;
-  height: 50%;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  height: 150%;
+  background-image: linear-gradient(to top, rgb(1, 0, 0), rgba(0, 0, 0, 0));
   bottom: 0;
 }
 
@@ -49,18 +49,15 @@
   border-radius: 12px;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
 }
-
+.info-panel .seoIcon {
+  width: 100px;
+  height: 100px;
+}
 .info-panel h4 {
   font-size: 16px;
   font-weight: bold;
   margin-top: 20px;
   text-transform: uppercase;
-}
-
-.info-panel p {
-  font-size: 14px;
-  font-weight: lighter;
-  color: #acacac;
 }
 
 /* Workingspace */
@@ -70,7 +67,7 @@
 }
 
 .workingspace img {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .workingspace h2 {
@@ -85,7 +82,7 @@
 
 .workingspace p {
   font-size: 18px;
-  color: #acacac;
+  color: #6b6b6b;
   font-weight: 200;
 }
 
@@ -95,7 +92,7 @@
 }
 
 .testimonial p {
-  font-size: 1.4em;
+  font-size: 1.2em !important;
   text-align: center;
   font-weight: 200;
   font-style: italic;
