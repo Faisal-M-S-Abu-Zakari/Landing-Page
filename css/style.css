@@ -132,59 +132,98 @@ footer {
   background-color: hsl(260, 8%, 14%);
   padding: 50px 100px;
   display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
   justify-content: start;
   align-items: baseline;
   column-gap: 120px;
 }
+
 footer h3 {
   font-size: 30px;
   font-weight: 700;
   color: white;
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
+
 footer .Feature {
   display: flex;
-  column-gap: 150px;
-  margin-top: 20px;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px; /* Optional: limit width for larger screens */
 }
+
 footer .Feature ul {
   padding: 0;
   width: 130px;
+  margin: 10px; /* Added margin for spacing */
 }
+
 footer .Feature ul li:not(:first-child) {
   color: hsl(0, 0%, 75%);
   font-size: 16px;
   padding-bottom: 15px;
 }
+
 footer .Feature ul li:first-child {
   color: white;
   font-weight: 700;
   padding-bottom: 15px;
   font-size: 20px;
 }
+
 footer .Feature .social {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: baseline;
+  align-items: center;
+  align-items: start;
   gap: 10px;
 }
+
+footer .Feature .social a {
+  text-decoration: none;
+  display: flex;
+}
+
 footer .Feature .social i {
   font-size: 20px;
   color: white;
 }
+
 footer .Feature .social i:hover {
   color: hsl(180, 66%, 49%);
 }
-footer .Feature .social a {
-  text-decoration: none;
-}
+
 footer .Feature .social a span {
   margin-left: 10px;
 }
+
 footer .Feature .social a span:hover {
   color: hsl(180, 66%, 49%);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  footer {
+    padding: 30px 20px;
+    column-gap: 0px;
+  }
+
+  footer h3 {
+    font-size: 24px;
+  }
+
+  footer .Feature {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .Feature ul {
+    width: auto; /* Allow width to adjust */
+  }
 }
 
 /* Utility */
